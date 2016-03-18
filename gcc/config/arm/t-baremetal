@@ -91,9 +91,17 @@ ifneq (,$(findstring armv7e-m,$(with_multilib_list)))
 MULTILIB_REQUIRED   += mthumb/march=armv7e-m
 MULTILIB_REQUIRED   += mthumb/march=armv7e-m/mfloat-abi=softfp/mfpu=fpv4-sp-d16
 MULTILIB_REQUIRED   += mthumb/march=armv7e-m/mfloat-abi=hard/mfpu=fpv4-sp-d16
+MULTILIB_REQUIRED   += mthumb/march=armv7e-m/mfloat-abi=softfp/mfpu=fpv5-d16
+MULTILIB_REQUIRED   += mthumb/march=armv7e-m/mfloat-abi=hard/mfpu=fpv5-d16
+MULTILIB_REQUIRED   += mthumb/march=armv7e-m/mfloat-abi=softfp/mfpu=fpv5-sp-d16
+MULTILIB_REQUIRED   += mthumb/march=armv7e-m/mfloat-abi=hard/mfpu=fpv5-sp-d16
 MULTILIB_OSDIRNAMES += mthumb/march.armv7e-m=!armv7e-m
 MULTILIB_OSDIRNAMES += mthumb/march.armv7e-m/mfloat-abi.hard/mfpu.fpv4-sp-d16=!armv7e-m/fpu
 MULTILIB_OSDIRNAMES += mthumb/march.armv7e-m/mfloat-abi.softfp/mfpu.fpv4-sp-d16=!armv7e-m/softfp
+MULTILIB_OSDIRNAMES += mthumb/march.armv7e-m/mfloat-abi.hard/mfpu.fpv5-d16=!armv7e-m/fpu/fpv5-d16
+MULTILIB_OSDIRNAMES += mthumb/march.armv7e-m/mfloat-abi.softfp/mfpu.fpv5-d16=!armv7e-m/softfp/fpv5-d16
+MULTILIB_OSDIRNAMES += mthumb/march.armv7e-m/mfloat-abi.hard/mfpu.fpv5-sp-d16=!armv7e-m/fpu/fpv5-sp-d16
+MULTILIB_OSDIRNAMES += mthumb/march.armv7e-m/mfloat-abi.softfp/mfpu.fpv5-sp-d16=!armv7e-m/softfp/fpv5-sp-d16
 endif
 
 ifneq (,$(findstring armv8-m.main,$(with_multilib_list)))
